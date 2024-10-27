@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../private/javaScript/contact.js" async></script>
+  </head>
+  <body class="bg-myPurple">
+    <div class="text-center py-1 bg-myBlack text-myWhite text-2xl font-bold">
+          <!-- Language Switcher -->
+    <div class="text-left mt-2.5 ml-10">
+        <button id="btn-lang" class="bg-myRed text-myWhite px-4 py-1 rounded-md">Change to English</button>
+      </div>
+    </div>
+    <nav
+    class="block w-10/12 max-w-screen-lg px-4 py-2 mx-auto bg-myGrey shadow-md rounded-md lg:px-8 lg:py-3 mt-10"
+  >
+    <div class="container flex flex-wrap items-center justify-between mx-auto">
+      <a
+    href="index.html"
+    class="mr-4 block cursor-pointer py-1.5 text-base text-myWhite font-extrabold"
+    data-en="Portfolio"
+    data-es="Portafolio"
+  >Portfolio</a>
+        <div class="tham tham-e-squeeze tham-w-6">
+          <div class="tham-box">
+            <div class="tham-inner bg-myRed"></div>
+          </div>
+        </div>
+    </div>
+    <div class="hidden" id="mobile-menu">
+      <ul class="flex flex-col gap-1 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-col lg:items-start lg:gap-2">
+        <li class="flex items-center p-1 text-sm gap-x-2 text-myWhite">
+          <a
+            href="proyects.html"
+            class="flex items-center"
+            data-en="Projects"
+            data-es="Proyectos"
+          >
+            Proyectos
+          </a>
+        </li>
+        <li class="flex items-center p-1 text-sm gap-x-2 text-myWhite">
+          <a
+            href="contact.html"
+            class="flex items-center"
+            data-en="Contact"
+            data-es="Contacto"
+          >
+            Contacto
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <!-- Main content -->
+    <section class="bg-myBlack text-myWhite py-3 mt-24">
+      <div class="container mx-auto text-center">
+        <h2 class="text-lg font-semibold" data-en="Leave a Comment" data-es="Deja un Comentario">Leave a Comment</h2>
+        <form id="commentForm" class="mt-4">
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-medium text-myWhite" data-en="Name" data-es="Nombre">Name</label>
+            <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 bg-myBlack border border-myWhite rounded-md shadow-sm focus:outline-none focus:ring-myBlue focus:border-myBlue sm:text-sm">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-myWhite" data-en="Email" data-es="Correo Electrónico">Email</label>
+            <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 bg-myBlack border border-myWhite rounded-md shadow-sm focus:outline-none focus:ring-myBlue focus:border-myBlue sm:text-sm">
+          </div>
+          <div class="mb-4">
+            <label for="comment" class="block text-sm font-medium text-myWhite" data-en="Comment" data-es="Comentario">Comment</label>
+            <textarea id="comment" name="comment" required class="mt-1 block w-full px-3 py-2 bg-myBlack border border-myWhite rounded-md shadow-sm focus:outline-none focus:ring-myBlue focus:border-myBlue sm:text-sm"></textarea>
+          </div>
+          <button type="submit" class="px-4 py-2 bg-myBlue text-myWhite rounded-md hover:bg-myBlue">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Comments Display Section -->
+    <section id="commentsSection" class="bg-myBlack text-myWhite py-3 mt-24">
+      <div class="container mx-auto text-center">
+        <h2 class="text-lg font-semibold">Comments</h2>
+        <div id="commentsList" class="mt-4"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-myBlack text-myWhite py-3 mt-24">
+      <div class="container mx-auto text-center">
+        <p class="text-lg font-semibold" data-en="Contact Information" data-es="Información de Contacto">Contact Information</p>
+        <p>Email: <a href="contact.html" class="text-myBlue hover:underline">daniel.leon9282@alumnos.udg.mx</a></p>
+        <p data-en="Phone: +52 55 29432686" data-es="Teléfono: +52 55 29432686">Telefono: +52 55 29432686</p>
+        <p data-en="Address: 1234 Street Name, City, Country" data-es="Dirección: 1234 Nombre de la Calle, Ciudad, País">Dirreccion:</p>
+        <div class="mt-4">
+          <a href="https://www.linkedin.com/in/daniel-leon-knight" class="text-myBlue hover:underline">LinkedIn</a>
+          <span class="mx-2">|</span>
+          <a href="https://github.com/Dannnnn-afk" class="text-myBlue hover:underline">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+   
+  </body>
+</html>

@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../private/javaScript/proyects.js" async ></script>
+  </head>
+  <body class="bg-myPurple">
+      <div class="text-center py-1 bg-myBlack text-myWhite text-2xl font-bold">
+        <!-- Language Switcher -->
+  <div class="text-left mt-2.5 ml-10">
+      <button id="btn-lang" class="bg-myRed text-myWhite px-4 py-1 rounded-md">Change to English</button>
+    </div>
+  </div>
+    <nav
+    class="block w-10/12 max-w-screen-lg px-4 py-2 mx-auto bg-myGrey shadow-md rounded-md lg:px-8 lg:py-3 mt-10"
+  >
+    <div class="container flex flex-wrap items-center justify-between mx-auto">
+      <a
+        href="index.html"
+        class="mr-4 block cursor-pointer py-1.5 text-base text-myWhite font-extrabold"
+        data-en="Portfolio"
+        data-es="Portafolio"
+      >
+        Portfolio
+      </a>
+        <div class="tham tham-e-squeeze tham-w-6">
+          <div class="tham-box">
+            <div class="tham-inner bg-myRed"></div>
+          </div>
+        </div>
+    </div>
+    <div class="hidden" id="mobile-menu">
+      <ul class="flex flex-col gap-1 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-col lg:items-start lg:gap-2">
+        <li class="flex items-center p-1 text-sm gap-x-2 text-myWhite">
+          <a
+            href="proyects.html"
+            class="flex items-center"
+            data-en="Projects"
+            data-es="Proyectos"
+          >
+            Proyectos
+          </a>
+        </li>
+        <li class="flex items-center p-1 text-sm gap-x-2 text-myWhite">
+          <a
+            href="contact.html"
+            class="flex items-center"
+            data-en="Contact"
+            data-es="Contacto"
+          >
+            Contacto
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <!-- Main content projects -->
+    <div class="container mx-auto mt-10">
+      <!-- Main content area -->
+      <header class="text-center">
+        <h1 class="text-4xl font-bold" data-en="Projects" data-es="Proyectos">Proyectos</h1>
+        <p class="text-lg mt-2" data-en="Explore my projects in various development areas." data-es="Explora mis proyectos en diversas áreas de desarrollo.">Explora mis proyectos en diversas áreas de desarrollo.</p>
+      </header>
+    </div>
+   <!-- Sección de Proyectos -->
+   <section class="container mx-auto mt-10">
+    <!-- Videojuegos -->
+    <h2 class="text-4xl font-extrabold text-center text-myBlack bg-gradient-to-r from-myBlue to-myRed p-4 rounded-lg shadow-lg transform transition duration-1000 hover:scale-105" data-en="Video Games" data-es="Videojuegos">Videojuegos</h2>
+    <div class="flex justify-center mt-4">
+      <img class="w-1/2 h-auto border-4 border-myBlack rounded-lg shadow-lg transform transition duration-500 hover:scale-110 hover:shadow-2xl" src="/content/paintRaiders.jpeg" alt="image description">
+    </div>
+    <div class="bg-opacity-75 p-4 rounded-md mt-2 inline-block text-center">
+      <p class="mt-2 text-myWhite font-bold bg-myBlack inline-block bg-opacity-80 p-1 rounded" data-en="Developed with Unreal Engine 5, this first-person game was designed as a combination of high-score arcade games. The foundations of this game were thought of as a combination of Duck Hunt and Galaga, winning first place in the course JAM." data-es="Desarrollado con Unreal engine 5, juego en primera persona fue pensado en una combinacion de juego arcade highScore, las bases de este juego fueron pensadas como una convinacion de duck hunt y galaga, logrando ganar el primer lugar en la JAM de curso.">Desarrollado con Unreal engine 5, juego en primera persona fue pensado en una combinacion de juego arcade highScore, las bases de este juego fueron pensadas como una convinacion de duck hunt y galaga, logrando ganar el primer lugar en la JAM de curso.</p>
+      <p class="mt-2 text-center text-myWhite font-bold bg-myBlack bg-opacity-80 p-1 rounded" data-en="The game is under development and is available on the itch.io platform. You can try it at the following link:" data-es="El juego se encuentra en desarrollo, se encuentra en la plataforma itch.io, puedes probarlo en el siguiente enlace:">El juego se encuentra en desarrollo, se encuentra en la plataforma itch.io, puedes probarlo en el siguiente enlace:</p>
+      <a href="https://paintraiders.itch.io/paint-raiders" target="_blank" class="text-myWhite hover:underline bg-myRed bg-opacity-80 p-1 rounded align-middle m-12" data-en="Try the game!" data-es="Prueba el juego!">Prueba el juego!</a>
+    </div>
+  </section>
+  
+
+     <!-- Estructuras de Datos C++ -->
+     <div class="container mx-auto bg-myPurple p-5 rounded-lg mb-10">
+      <h2 class="text-3xl font-semibold text-center" data-en="C++ Data Structures" data-es="Estructuras de Datos C++">Estructuras de Datos C++</h2>
+      <div class="mt-4 text-center">
+        <h3 class="text-2xl font-bold text-center" data-en="Project 1: Static List" data-es="Proyecto 1: Lista Estatica">Proyecto 1: Lista Estatica</h3>
+        <p class="mt-2 text-center" data-en="Implementation from scratch of a static list, using templates in C++" data-es="Implementacion desde 0 de una lista estatica, utilizando templates en C++">Implementacion desde 0 de una lista estatica, utilizando templates en C++</p>
+        <button class="bg-myRed  text-myWhite px-4 py-2 rounded-md mt-2" onclick="toggleCode('code1')" data-en="Show Code" data-es="Mostrar Código">Mostrar Código</button>
+        <pre id="code1" class="bg-myGrey text-myWhite p-4 rounded-lg mt-2 overflow-auto hidden text-left">
+      <code class="language-cpp">
+        #ifndef __LISTA_HPP__
+        #define __LISTA_HPP__
+        
+        #include <exception>
+        #include <iomanip>
+        #include <iostream>
+        #include <string>
+        
+        class Exception : public std::exception {
+         private:
+          std::string msg;
+        
+         public:
+          Exception() noexcept : msg("Error indefinido") {}
+          Exception(const Exception& ex) noexcept : msg(ex.msg) {}
+          Exception(const std::string& m) : msg(m) {}
+          Exception& operator=(const Exception& ex) noexcept {
+            msg = ex.msg;
+            return *this;
+          }
+          virtual ~Exception() {}
+          virtual const char* what() const noexcept { return msg.c_str(); }
+        };
+        
+        template <class T, int ARRAYSIZE = 3000>
+        class List {
+         private:
+          T data[ARRAYSIZE];
+          int last;
+        
+          bool isValid(const int&) const;
+        
+         public:
+          List();
+          bool isEmpty() const;
+          bool isfull() const;
+          void insertData(const int&, const T&);  // posicion elemento.
+          void deleteData(const int&);
+          int getFirstPos() const;
+          int getLastPos() const;
+          int getPrevPos(const int&) const;
+          int getNextPos(const int&) const;
+          int find(const T&) const;
+          int findBina(const T&) const;
+          T retrieve(const int&) const;
+          void sortData();
+          // string toString()const;
+          void printData();
+          void deleteALL();
+        };
+        
+        using namespace std;
+        
+        template <class T, int ARRAYSIZE>
+        bool List<T, ARRAYSIZE>::isValid(const int& p) const {
+          return p >= 0 and p <= last;
+        }
+        template <class T, int ARRAYSIZE>
+        List<T, ARRAYSIZE>::List() {
+          last = -1;
+        }
+        template <class T, int ARRAYSIZE>
+        bool List<T, ARRAYSIZE>::isEmpty() const {
+          return last == -1;
+        }
+        template <class T, int ARRAYSIZE>
+        bool List<T, ARRAYSIZE>::isfull() const {
+          return last == ARRAYSIZE;
+        }
+        // primero posicion despues elemento.
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::insertData(const int& p, const T& e) {
+          if (isfull()) {
+            throw Exception("Desbordamiento de datos, inserData");
+          }
+        
+          if (p != -1 and !isValid(p)) {
+            throw Exception("Posicion invalida,Insert Data");
+          }
+          // Esto es en EL PUNTO DE INTERES
+          /*int i(last+1);
+          while (i> p)
+          {
+             data[i] = data[i-1];
+             i++;
+          }
+          DATA[P] =e;
+          lat++;*/
+        
+          int i(last);
+          while (i > p) {
+            data[i + 1] = data[i];
+            i--;
+          }
+          data[p + 1] = e;
+          last++;
+        }
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::deleteData(const int& p) {
+          if (!isValid(p)) {
+            throw Exception("Índice inválido en deleteData");
+          }
+        
+          // Desplazar los elementos a la izquierda para cubrir el espacio del elemento
+          // eliminado
+          for (int i = p; i < last; ++i) {
+            data[i] = data[i + 1];
+          }
+        
+          --last;  // Decrementar el índice del último elemento
+        }
+        
+        template <class T, int ARRAYSIZE>
+        int List<T, ARRAYSIZE>::getFirstPos() const {
+          /*if(isEmpty){
+           return -1;
+          }
+           return 0;*/
+        
+          return isEmpty() ? -1 : 0;
+        }
+        template <class T, int ARRAYSIZE>
+        int List<T, ARRAYSIZE>::getLastPos() const {
+          return last;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        int List<T, ARRAYSIZE>::getPrevPos(const int& p) const {
+          /*if(p == 1 or isValid(p)){
+          return -1;
+        
+          }
+          return p-1;
+          */
+        
+          return (!isValid(p)) ? -1 : p - 1;
+        }
+        template <class T, int ARRAYSIZE>
+        int List<T, ARRAYSIZE>::getNextPos(const int& p) const {
+          return (p == last or !isValid(p)) ? -1 : p + 1;
+        }
+        template <class T, int ARRAYSIZE>
+        int List<T, ARRAYSIZE>::find(const T& e) const {
+          int i(0);
+          while (i <= last){
+            if(data[i]==e){
+              return i;
+            }
+            i++;
+           
+          }
+         return -1;
+        }
+        template <class T, int ARRAYSIZE>
+        int List<T, ARRAYSIZE>::findBina(const T& e) const {
+          
+        
+        
+        
+        }
+        
+        template <class T, int ARRAYSIZE>
+        T List<T, ARRAYSIZE>::retrieve(const int& p) const {
+          if (isValid(p)) {
+            throw Exception("Desbordamiento de datos, retrieveData");
+          }
+          return data[p];
+        }
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::sortData() {
+          // pendiente
+        }
+        
+        // Aca va un std:: toSting()const para trabjar con objetos
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::printData() {
+          string result;
+          int i(0);
+          while (i <= last) {
+            cout << "Posicion " << i << ": " << data[i].toString() << endl;
+            i++;
+          }
+        }
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::deleteALL() {
+          last = -1;
+        }
+        
+        #endif  // __LISTA_HPP__
+        
+      </code>
+    </pre>
+    <p></p>
+    <a href="../content/dataStruct/lista.hpp" class="bg-myBlue text-myWhite px-4 py-1 rounded-md mt-2 align-bottom" data-en="Download Code" data-es="Descargar Código">Descargar Código</a>
+  </div>
+  <div class="mt-4 text-center">
+    <h3 class="text-2xl font-bold text-center" data-en="Project 2: Static Stack" data-es="Proyecto 2: Pila Estatica">Proyecto 2: Pila Estatica</h3>
+    <p class="mt-2" data-en="Implementation in its most primitive form, using templates in C++" data-es="Implementacion en su forma mas primitiva, utilizando templates en C++">Implementacion en su forma mas primitiva, utilizando templates en C++</p>
+    <button class="bg-myRed text-myWhite px-4 py-2 rounded-md mt-2" onclick="toggleCode('code2')" data-en="Show Code" data-es="Mostrar Código">Mostrar Código</button>
+    <pre id="code2" class="bg-myGrey text-myWhite p-4 rounded-lg mt-2 overflow-auto hidden text-left">
+      <code class="language-cpp">
+        #ifndef __PILA_H__
+        #define __PILA_H__
+        
+        #include <exception>
+        #include <string>
+        // pila o sta
+        
+        // definicion
+        template <class T, int ARRAYSIZE = 1024>
+        class Stack {
+         private:
+          T data[ARRAYSIZE];
+          int top;
+          void copyAll(const Stack&);
+        
+         public:
+          class Exception : public std::exception {
+           private:
+            std::string msg;
+        
+           public:
+            Exception() noexcept : msg("Error indefinido") {}
+            Exception(const Exception& ex) noexcept : msg(ex.msg) {}
+            Exception(const std::string& m) : msg(m) {}
+            Exception& operator=(const Exception& ex) noexcept {
+              msg = ex.msg;
+              return *this;
+            }
+            virtual ~Exception() {}
+            virtual const char* what() const noexcept { return msg.c_str(); }
+          };
+          Stack();
+          Stack(const Stack&);
+          bool isEmpty() const;
+          bool isFull() const;
+          void push(const T&);
+          void pop();
+          T popRegresa();
+          T getTop() const;
+        
+          Stack& operator=(const Stack&);
+        };
+        
+        // implementacion.
+        using namespace std;
+        
+        // delegacion de constructores.
+        template <class T, int ARRAYSIZE>
+        Stack<T, ARRAYSIZE>::Stack() : top(-1) {}
+        
+        template <class T, int ARRAYSIZE>
+        Stack<T, ARRAYSIZE>::Stack(const Stack& other) {
+          copyAll(other);
+        }
+        
+        template <class T, int ARRAYSIZE>
+        bool Stack<T, ARRAYSIZE>::isEmpty() const {
+          return top == -1;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        bool Stack<T, ARRAYSIZE>::isFull() const {
+          return top == ARRAYSIZE - 1;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        void Stack<T, ARRAYSIZE>::push(const T& e) {
+          if (isFull()) {
+            throw Exception("Desbordamiento de datos,psuh");
+          }
+        
+          data[++top] = e;
+        }
+        // version que no recibe nadota
+        template <class T, int ARRAYSIZE>
+        void Stack<T, ARRAYSIZE>::pop() {
+          if (isEmpty()) {
+            throw Exception("Insuficiencia de datos, pop");
+          }
+          top--;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        T Stack<T, ARRAYSIZE>::popRegresa() {
+          if (isEmpty()) {
+            throw Exception("Insuficiencia de datos, pop");
+          }
+        
+          return (data[top--]);
+        }
+        
+        template <class T, int ARRAYSIZE>
+        T Stack<T, ARRAYSIZE>::getTop() const {
+          if (isEmpty()) {
+            throw Exception("Insuficiencia de datos, getTop");
+          }
+        
+          return data[top];
+        }
+        
+        template <class T, int ARRAYSIZE>
+        Stack<T, ARRAYSIZE>& Stack<T, ARRAYSIZE>::operator=(const Stack& other) {
+          copyAll(other);
+          return *this;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        void Stack<T, ARRAYSIZE>::copyAll(const Stack&other) {
+          top = other.top;
+          int i(0);
+          while (i <= top) {
+            data[i] = other.data[i];
+            i++;
+          }
+        }
+        
+        #endif  // __PILA_H__
+      </code>
+    </pre>
+    <p></p>
+    <a href="../content/dataStruct/pila.hpp" class="bg-myBlue text-myWhite px-4 py-1 rounded-md mt-2 align-bottom" data-en="Download Code" data-es="Descargar Código">Descargar Código</a>
+  </div>
+  <div class="mt-4 text-center">
+    <h3 class="text-2xl font-bold text-center" data-en="Project 3: Static Queue" data-es="Proyecto 3: Cola Estatica">Proyecto 3: Cola Estatica</h3>
+    <p class="mt-2" data-en="Implementation in its most primitive form to understand its operation, using templates in C++" data-es="Implementacion en su forma mas primitiva para entender su funcionamineto, utilizando templates en C++">Implementacion en su forma mas primitiva para entender su funcionamineto, utilizando templates en C++</p>
+    <button class="bg-myRed text-myWhite px-4 py-2 rounded-md mt-2" onclick="toggleCode('code3')" data-en="Show Code" data-es="Mostrar Código">Mostrar Código</button>
+    
+    <pre id="code3" class="bg-myGrey text-myWhite p-4 rounded-lg mt-2 overflow-auto hidden text-left">
+      <code class="language-cpp">
+        #ifndef __QUEUE_H__
+#define __QUEUE_H__
+
+#include <exception>
+#include <string>
+
+template <class T, int ARRAYSIZE = 20>
+class Queue {
+ private:
+  int frontPos;
+  int endPos;
+  T data[ARRAYSIZE];
+  void copyAll(const Queue&);
+
+ public:
+  class Exception : public std::exception {
+   private:
+    std::string msg;
+
+   public:
+    Exception() noexcept : msg("Error indefinido") {}
+    Exception(const Exception& ex) noexcept : msg(ex.msg) {}
+    Exception(const std::string& m) : msg(m) {}
+    Exception& operator=(const Exception& ex) noexcept {
+      msg = ex.msg;
+      return *this;
+    }
+    virtual ~Exception() {}
+    virtual const char* what() const noexcept { return msg.c_str(); }
+  };
+  Queue();
+  Queue(const Queue&);
+  bool isEmpy() const;
+  bool isFull() const;
+  void enqueue(const T&);
+  T dequeue();
+  T getFront() const;
+  Queue& operator=(const Queue&);
+};
+
+template <class T, int ARRAYSIZE>
+void Queue<T, ARRAYSIZE>::copyAll(const Queue& q) {
+  frontPos = q.frontPos;
+  endPos = q.endPos;
+  int tempPos = frontPos;
+
+  while (tempPos != endPos) {
+    data[tempPos] = q.data[tempPos];
+    tempPos++;
+  }
+  data[endPos] = q.data[endPos];
+}
+
+template <class T, int ARRAYSIZE>
+Queue<T, ARRAYSIZE>::Queue() : frontPos(0), endPos(ARRAYSIZE - 1) {}
+
+template <class T, int ARRAYSIZE>
+Queue<T, ARRAYSIZE>::Queue(const Queue& q) {
+  copyAll(q);
+}
+
+template <class T, int ARRAYSIZE>
+bool Queue<T, ARRAYSIZE>::isEmpy() const {
+  return (frontPos == endPos + 1) or
+         (frontPos == 0 and endPos == 1 and endPos == ARRAYSIZE - 1);
+}
+
+template <class T, int ARRAYSIZE>
+bool Queue<T, ARRAYSIZE>::isFull() const {
+  return frontPos == endPos + 2 or
+         (frontPos == 0 and endPos == ARRAYSIZE - 2) or
+         (frontPos == 1 and endPos == ARRAYSIZE - 1);
+}
+
+template <class T, int ARRAYSIZE>
+void Queue<T, ARRAYSIZE>::enqueue(const T& e) {
+  if (isFull()) {
+    throw Queue::Exception("Desbordamiento de datos, enqueue");
+  }
+  data[endPos = (++endPos == ARRAYSIZE) ? 0 : endPos] = e;
+
+  /*if(++endPos== ARRAYSIZE){
+      endPos=0;
+
+  }*/
+}
+
+template <class T, int ARRAYSIZE>
+T Queue<T, ARRAYSIZE>::dequeue() {
+  if (isEmpy()) {  // Asegúrate de usar isEmpty()
+    throw Exception("Insuficiencia de datos, dequeue");
+  }
+
+  // Devolver el valor en la posición 'frontPos'
+  T result = data[frontPos];
+
+  // Actualizar 'frontPos'
+  frontPos = (++frontPos == ARRAYSIZE) ? 0 : frontPos;
+
+  return result;
+}
+
+template <class T, int ARRAYSIZE>
+T Queue<T, ARRAYSIZE>::getFront() const {
+  if (isEmpy()) {
+    throw Exception("Insuficiencia de datos getFront");
+  }
+  T result(data[frontPos]);
+  return result;
+}
+
+template <class T, int ARRAYSIZE>
+Queue<T, ARRAYSIZE>& Queue<T, ARRAYSIZE>::operator=(const Queue& q) {
+  copyAll(q);
+  return *this;
+}
+
+#endif  // __QUEUE_H__
+      </code>
+    </pre>
+    <p></p>
+    <a href="../content/dataStruct/queue.hpp" class="bg-myBlue text-myWhite px-4 py-1 rounded-md mt-2 align-bottom" data-en="Download Code" data-es="Descargar Código">Descargar Código</a>
+  </div>
+  <div class="mt-4 text-center">
+    <h3 class="text-2xl font-bold text-center" data-en="Project 4: Sorting Methods" data-es="Proyecto 4: Metodos de ordenamiento">Proyecto 4: Metodos de ordenamiento</h3>
+    <p class="mt-2" data-en="Implementation of sorting methods, both recursive and iterative in a list." data-es="Implementacion de metodos de ordenamiento, tanto recursivos como iterativos en una lista.">Implementacion de metodos de ordenamiento, tanto recursivos como iterativos en una lista.</p>
+    <button class="bg-myRed text-myWhite px-4 py-2 rounded-md mt-2" onclick="toggleCode('code4')" data-en="Show Code" data-es="Mostrar Código">Mostrar Código</button>
+    <pre id="code4" class="bg-myGrey text-myWhite p-4 rounded-lg mt-2 overflow-auto hidden text-left">
+      <code class="language-cpp">
+        #ifndef __LISTA_H__
+        #define __LISTA_H__
+        
+        #include <exception>
+        #include <fstream>
+        #include <iomanip>
+        #include <iostream>
+        #include <sstream>
+        #include <string>
+        
+        class Exception : public std::exception {
+         private:
+          std::string msg;
+        
+         public:
+          Exception() noexcept : msg("Error indefinido") {}
+          Exception(const Exception& ex) noexcept : msg(ex.msg) {}
+          Exception(const std::string& m) : msg(m) {}
+          Exception& operator=(const Exception& ex) noexcept {
+            msg = ex.msg;
+            return *this;
+          }
+          virtual ~Exception() {}
+          virtual const char* what() const noexcept { return msg.c_str(); }
+        };
+        
+        template <class T, int ARRAYSIZE = 100000>
+        class List {
+         private:
+          T data[ARRAYSIZE];
+          int last;
+        
+          void mergeSort(const long&, const long&);
+          void quickSort(const long&, const long&);
+        
+          bool isValid(const int&) const;
+          void swapData(T&, T&) const;
+        
+         public:
+          List();
+          bool isEmpty() const;
+          bool isfull() const;
+          void insertData(const int&, const T&);  // posicion elemento.
+          void deleteData(const int&);
+          int getFirstPos() const;
+          int getLastPos() const;
+          int getPrevPos(const int&) const;
+          int getNextPos(const int&) const;
+          int find(const T&, int(const T&, const T&)) const;
+          int findBina(const T&, int(const T&, const T&)) const;
+          T retrieve(const int&) const;
+        
+          bool isSorted() const;
+        
+          void shorDataShell();
+          void sortDataSelect();
+          void sortDataBubble();
+          void sortDataInsert();
+          void sortDataBubbleM();
+        
+          void sortDataBubble(int(const T&, const T&));
+          void sortDataInsert(int(const T&, const T&));
+          void sortDataSelect(int(const T&, const T&));
+          // void sortDataShell(int(const T&, const T&));
+          //  Revisar esto
+          void mergeSort();
+          void mergeSort(const int&, const int&, int(const T&, const T&));
+        
+          //
+          void quickSort();
+          void quickSort(int(const T&, const T&));
+        
+          void printData();
+          void deleteALL();
+          void writeToDisk(const std::string&);
+          void readFromDisk(const std::string&);
+          size_t memoryUsage() const;
+        };
+        
+        using namespace std;
+        
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::swapData(T& a, T& b) const {
+          T aux(a);
+          a = b;
+          b = aux;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        bool List<T, ARRAYSIZE>::isValid(const int& p) const {
+          return p >= 0 && p <= ARRAYSIZE;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        List<T, ARRAYSIZE>::List() {
+          last = -1;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        bool List<T, ARRAYSIZE>::isEmpty() const {
+          return last == -1;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        bool List<T, ARRAYSIZE>::isfull() const {
+          return last == ARRAYSIZE - 1;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::insertData(const int& p, const T& e) {
+          if (isfull()) {
+            throw Exception("Desbordamiento de datos, inserData");
+          }
+        
+          if (p != -1 && !isValid(p)) {
+            throw Exception("Posicion invalida,Insert Data");
+          }
+        
+          int i(last);
+          while (i > p) {
+            data[i + 1] = data[i];
+            i--;
+          }
+          data[p + 1] = e;
+          last++;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::deleteData(const int& p) {
+          if (!isValid(p)) {
+            throw Exception("Índice inválido en deleteData");
+          }
+        
+          for (int i = p; i < last; ++i) {
+            data[i] = data[i + 1];
+          }
+        
+          --last;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        int List<T, ARRAYSIZE>::getFirstPos() const {
+          return isEmpty() ? -1 : 0;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        int List<T, ARRAYSIZE>::getLastPos() const {
+          return last;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        int List<T, ARRAYSIZE>::getPrevPos(const int& p) const {
+          return (!isValid(p)) ? -1 : p - 1;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        int List<T, ARRAYSIZE>::getNextPos(const int& p) const {
+          return (p == last || !isValid(p)) ? -1 : p + 1;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        int List<T, ARRAYSIZE>::find(const T& e, int cmp(const T&, const T&)) const {
+          int i = 0;
+          while (i <= last) {
+            if (cmp(data[i], e) == 0) {
+              return i;
+            }
+            i++;
+          }
+          return -1;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        int List<T, ARRAYSIZE>::findBina(const T& e,
+                                         int cmp(const T&, const T&)) const {
+          int i = 0;
+          int j = last - 1;
+        
+          while (i <= j) {
+            int medio = (i + j) / 2;
+            int result = cmp(data[medio], e);
+        
+            if (result == 0) {
+              return medio;
+            } else if (result > 0) {
+              j = medio - 1;
+            } else {
+              i = medio + 1;
+            }
+          }
+          return -1;
+        }
+        
+        template <class T, int ARRAYSIZE>
+        T List<T, ARRAYSIZE>::retrieve(const int& p) const {
+          if (!isValid(p)) {
+            throw Exception("Índice inválido en retrieve");
+          }
+          return data[p];
+        }
+        // METODOS DE ORDENAMIENTO
+        //
+        //
+        //
+        template <class T, int ARRAYSIZE>
+        bool List<T, ARRAYSIZE>::isSorted() const {
+          for (int i = 0; i < last; i++) {
+            if (data[i] > data[i + 1]) {
+              return false;
+            }
+          }
+          return true;
+        }
+        //
+        //
+        //
+        //
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::shorDataShell() {
+          float factor(1.0 / 2.0);
+          int dif((last + 1) * factor), i, j;
+          while (dif > 0) {
+            i = dif;
+            while (i <= last) {
+              j = i;
+              while (j >= dif && data[j - dif] > data[j]) {
+                swapData(data[j - dif], data[j]);
+                j -= dif;
+              }
+              i++;
+            }
+            dif *= factor;
+          }
+        }
+        
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::sortDataSelect() {
+          int i(0), j, m;
+        
+          while (i < last) {
+            m = i;
+        
+            j = i + 1;
+            while (j <= last) {
+              if (data[j] < data[m]) {
+                m = j;
+              }
+              j++;
+            }
+            if (i != m) {
+              swapData(data[i], data[m]);
+            }
+            i++;
+          }
+        }
+        
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::sortDataBubble() {
+          int i = last, j;
+        
+          while (i > 0) {
+            j = 0;
+            while (j < i) {
+              if (data[j] > data[j + 1]) {
+                swapData(data[j], data[j + 1]);
+              }
+              j++;
+            }
+            i--;
+          }
+        }
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::sortDataBubbleM() {
+          bool bandera;
+          int i = last, j;
+        
+          while (i > 0) {
+            j = 0;
+            bandera = 0;
+            while (j < i) {
+              if (data[j] > data[j + 1]) {
+                swapData(data[j], data[j + 1]);
+                bandera = true;
+              }
+              j++;
+            }
+            if (!bandera) {
+              break;
+            }
+            i--;
+          }
+        }
+        
+        // metodo interfaz le da sus primeros parametros
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::mergeSort() {
+          mergeSort(0, last);
+        }
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::mergeSort(const long& left, const long& right) {
+          // Criterio de paro
+          if (left >= right) {
+            return;
+          }
+        
+          // Divide y venceras
+          int m((left + right) / 2);
+          mergeSort(left, m);
+          mergeSort(m + 1, right);
+        
+          static T temp[ARRAYSIZE];  // Copia temporal
+          // Copiar datos al array temporal
+          for (int e(left); e < right; e++) {
+            temp[e] = data[e];
+          }
+        
+          // Intercalación
+          int i(left), j(m + 1), x(left);
+        
+          while (i <= m && j <= right) {
+            while (i <= m && temp[i] <= temp[j]) {
+              data[x++] = temp[i++];
+            }
+        
+            if (i <= m) {
+              while (j <= right && temp[j] <= temp[i]) {
+                data[x++] = temp[j++];
+              }
+            }
+          }
+        
+          // Copiar los elementos restantes de la primera mitad
+          while (i <= m) {
+            data[x++] = temp[i++];
+          }
+        
+          // Copiar los elementos restantes de la segunda mitad
+          while (j <= right) {
+            data[x++] = temp[j++];
+          }
+        }
+        
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::mergeSort(const int& left,
+                                           const int& right,
+                                           int cmp(const T& a, const T& b)) {
+          // Criterio de paro
+          if (left >= right) {
+            return;
+          }
+        
+          // Divide
+          int m = (left + right) / 2;
+          mergeSort(left, m, cmp);
+          mergeSort(m + 1, right, cmp);
+        
+          // Venceras
+          static T temp[ARRAYSIZE];  // Copia temporal
+        
+          // Copiar datos al array temporal
+          for (int e = left; e <= right; ++e) {
+            temp[e] = data[e];
+          }
+        
+          int i = left, j = m + 1, x = left;
+        
+          // Intercalación
+          while (i <= m && j <= right) {
+            if (cmp(temp[i], temp[j]) <= 0) {
+              data[x++] = temp[i++];
+            } else {
+              data[x++] = temp[j++];
+            }
+          }
+        
+          // Copiar los elementos restantes de la primera mitad
+          while (i <= m) {
+            data[x++] = temp[i++];
+          }
+        
+          // Copiar los elementos restantes de la segunda mitad
+          while (j <= right) {
+            data[x++] = temp[j++];
+          }
+        }
+        
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::quickSort() {
+          quickSort(0, last);
+        }
+        
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::quickSort(const long& L, const long& R) {
+          if (L >= R) {
+            return;
+          }
+        
+          int i(L), j(R);
+        
+          while (i < j) {
+            while (i < j and data[i] <= data[R]) {
+              i++;
+            }
+        
+            while (i < j and data[j] >= data[R]) {
+              j--;
+            }
+        
+            if (i != j) {
+              swapData(data[i], data[j]);
+            }
+          }
+        
+          if (i != R) {
+            swapData(data[i], data[R]);
+          }
+        
+          quickSort(L, i - 1);
+          quickSort(i + 1, R);
+        }
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::printData() {
+          for (int i = 0; i <= last; ++i) {
+            cout << data[i] << " ";
+          }
+          cout << endl;
+        }
+        template <class T, int ARRAYSIZE>
+        void List<T, ARRAYSIZE>::sortDataInsert() {
+          int i(1), j;
+          T aux;
+          while (i <= last) {
+            aux = data[i];
+            j = i;
+            while (j > 0 and aux < data[j - 1]) {
+              data[j] = data[j - 1];
+              j--;
+            }
+            if (i != j) {
+              data[j] = aux;
+            }
+            i++;
+          }
+        }
+        
+        template <class T, int ARRAYSIZE>
+        size_t List<T, ARRAYSIZE>::memoryUsage() const {
+          size_t totalSize = sizeof(*this);  // Size of the List object itself
+          for (int i = 0; i <= last; ++i) {
+            totalSize += sizeof(data[i]);  // Size of each element in the array
+            cout << totalSize << endl;
+          }
+          return totalSize;
+        }
+        #endif
+        
+      </code>
+    </pre>
+    <p></p>
+    <a href="../content/dataStruct/listaordenamiento.hpp" class="bg-myBlue text-myWhite px-4 py-1 rounded-md mt-2 align-bottom" data-en="Download Code" data-es="Descargar Código">Descargar Código</a>  
+  </div>
+  <div class="mt-4 text-center">
+    <h3 class="text-2xl font-bold text-center" data-en="Project 5: Singly Linked List without Header" data-es="Proyecto 5: Lista dinamica simplemente ligada sin encabezado">Proyecto 5: Lista dinamica simplemente ligada sin encabezado</h3>
+    <p class="mt-2" data-en="Implementation of a dynamic list, along with its node using templates in C++" data-es="Implementacion de lista dinamica, junto con su nodo utilizando templates en C++">Implementacion de lista dinamica, junto con su nodo utilizando templates en C++</p>
+    <button class="bg-myRed text-myWhite px-4 py-2 rounded-md mt-2" onclick="toggleCode('code5')" data-en="Show Code" data-es="Mostrar Código">Mostrar Código</button>
+    <pre id="code5" class="bg-myGrey text-myWhite p-4 rounded-lg mt-2 overflow-auto hidden text-left">
+      <code class="language-cpp">
+        #ifndef __LISTDINAMIC_H__
+        #define __LISTDINAMIC_H__
+        
+        #include <exception>
+        #include <fstream>
+        #include <iomanip>
+        #include <iostream>
+        #include <sstream>
+        #include <string>
+        
+        template <class T>
+        class List {
+         private:
+          class Node {
+           private:
+            T data;
+            Node* next = nullptr;
+        
+           public:
+            Node();
+            Node(const T&);
+            ~Node();
+            // Puede ser sin referencias
+            T& getData();
+            Node* getNext();
+            void setData(const T&);
+            void setNext(Node*);
+          };
+        
+         public:
+          // inicia publico.
+          class Exception : public std::exception {
+           private:
+            std::string msg;
+        
+           public:
+            Exception() noexcept : msg("Error indefinido") {}
+            Exception(const Exception& ex) noexcept : msg(ex.msg) {}
+            Exception(const std::string& m) : msg(m) {}
+            Exception& operator=(const Exception& ex) noexcept {
+              msg = ex.msg;
+              return *this;
+            }
+            virtual ~Exception() {}
+            virtual const char* what() const noexcept { return msg.c_str(); }
+          };
+          // Publico
+          typedef Node* Position;
+        
+         private:
+          Position anchor;
+        
+          bool isValidPos(const Position&) const;
+          void copyAll(const List<T>&);
+        
+         public:
+          List();
+          List(const List<T>&);
+          ~List();
+          // No tiene concepto de llena lo que la memoria soporte neni
+          bool isEmpty() const;
+          void insertData(const Position&, const T&);
+          void deleteData(const Position&);
+          List<T>::Position getFirstPos() const;
+          List<T>::Position getLastPos() const;
+          List<T>::Position getPrevPos(const Position&) const;
+          List<T>::Position getNextPos(const Position&) const;
+          List<T>::Position findData(const T&) const;
+          Position findData(const T&, int (*compare)(const T&, const T&)) const;
+        
+          // Por referencia es cambiarlo dentro de la lista
+          T& retrieve(const Position&);
+          std::string toString() const;
+          void deleteAll();
+        
+          List& operator=(const List<T>&);
+        };
+        template <class T>
+        List<T>::Node::Node() : next(nullptr), data() {}
+        
+        template <class T>
+        List<T>::Node::Node(const T& e) : next(nullptr), data(e) {}
+        
+        template <class T>
+        List<T>::Node::~Node() {}
+        
+        template <class T>
+        T& List<T>::Node::getData() {
+          return data;
+        }
+        
+        template <class T>
+        typename List<T>::Node* List<T>::Node::getNext() {
+          return next;
+        }
+        
+        template <class T>
+        void List<T>::Node::setData(const T& e) {
+          data = e;
+        }
+        
+        template <class T>
+        void List<T>::Node::setNext(Node* e) {
+          next = e;
+        }
+        // Implementar lista
+        
+        template <class T>
+        List<T>::List() : anchor(nullptr) {}
+        template <class T>
+        bool List<T>::isValidPos(const List<T>::Position& p) const {
+          Position aux = anchor;
+          while (aux != nullptr) {
+            if (aux == p) {
+              return true;
+            }
+            aux = aux->getNext();
+          }
+          return false;
+        }
+        template <class T>
+        void List<T>::copyAll(const List<T>& l) {
+          Position aux(l.anchor), lastInserted(nullptr), newNode;
+          while (aux != nullptr) {
+            newNode = new (std::nothrow) Node(aux->getData());
+            if (newNode == nullptr) {
+              throw Exception("Memoria insuficiente");
+            }
+            if (lastInserted == nullptr) {
+              anchor = newNode;
+            } else {
+              lastInserted->setNext(newNode);
+            }
+            lastInserted = newNode;
+            aux = aux->getNext();
+          }
+        }
+        
+        template <class T>
+        List<T>::List(const List<T>& lista) : anchor(nullptr) {
+          copyAll(lista);
+        }
+        
+        template <class T>
+        List<T>::~List() {
+          deleteAll();
+        }
+        
+        template <class T>
+        bool List<T>::isEmpty() const {
+          return anchor == nullptr;
+        }
+        
+        template <class T>
+        void List<T>::insertData(const typename List<T>::Position& p, const T& e) {
+          if (p != nullptr and !isValidPos(p)) {
+            throw Exception("Posicion invalida, insertData");
+          }
+          Position aux(new Node(e));
+          if (aux == nullptr) {
+            /* code */ throw Exception("Memoria no disponible");
+          }
+          // Religado
+          // Incio
+          if (p == nullptr) {
+            aux->setNext(anchor);
+            anchor = aux;
+          }  // Inserta en otro lugar
+          else {
+            aux->setNext(p->getNext());
+            p->setNext(aux);
+          }
+        }
+        
+        template <class T>
+        void List<T>::deleteData(const List<T>::Position& p) {
+          if (!isValidPos(p)) {
+            throw Exception("Posicion invalida");
+          }
+          if (p == anchor) {
+            anchor = p->getNext();
+          } else {
+            getPrevPos(p)->setNext(p->getNext());
+          }
+          delete p;
+        }
+        
+        template <class T>
+        typename List<T>::Position List<T>::getFirstPos() const {
+          return anchor;
+        }
+        
+        template <class T>
+        typename List<T>::Position List<T>::getLastPos() const {
+          Position aux(anchor);
+          while (aux->getNext() != nullptr) {
+            aux = aux->getNext();
+          }
+          return aux;
+        }
+        
+        template <class T>
+        typename List<T>::Position List<T>::getPrevPos(const Position& p) const {
+          Position aux(anchor);
+          while (aux != nullptr && aux->getNext() != p) {
+            aux = aux->getNext();
+          }
+          return aux;
+        }
+        
+        template <class T>
+        typename List<T>::Position List<T>::getNextPos(const Position& p) const {
+          if (!isValidPos(p)) {
+            throw Exception("Posicion invalida");
+          }
+        
+          return p->getNext();
+        }
+        
+        template <class T>
+        typename List<T>::Position List<T>::findData(const T& e) const {
+          Position aux(anchor);
+          while (aux != nullptr && aux->getData() != e) {
+            aux = aux->getNext();
+          }
+          return aux;
+        }
+        template <class T>
+        typename List<T>::Position List<T>::findData(const T& e,
+                                                     int (*compare)(const T&,
+                                                                    const T&)) const {
+          Position aux = anchor;
+          while (aux != nullptr && compare(aux->getData(), e) != 0) {
+            aux = aux->getNext();
+          }
+          return aux;
+        }
+        template <class T>
+        T& List<T>::retrieve(const List<T>::Position& p) {
+          if (!isValidPos(p)) {
+            throw Exception("Posicion Invalida");
+          }
+          return p->getData();
+        }
+        
+        template <class T>
+        std::string List<T>::toString() const {
+          Position aux;
+          aux = anchor;
+          std::string result;
+          while (aux != nullptr) {
+            result += aux->getData().toString() + "\n";
+            aux = aux->getNext();
+          }
+          return result;
+        }
+        
+        template <class T>
+        void List<T>::deleteAll() {
+          Position aux;
+          while (anchor != nullptr) {
+            aux = anchor;
+        
+            anchor = aux->getNext();
+            delete aux;
+          }
+        }
+        
+        template <class T>
+        List<T>& List<T>::operator=(const List<T>& lista) {
+          copyAll(lista);
+          return *this;
+        }
+        #endif  // __LISTDINAMIC_H__
+      </code>
+    </pre>
+    <p></p>
+    <a href="../content/dataStruct/ListDinamic.hpp" class="bg-myBlue text-myWhite px-4 py-1 rounded-md mt-2 align-bottom" data-en="Download Code" data-es="Descargar Código">Descargar Código</a>  
+  </div>
+  <div class="mt-4 text-center">
+    <h3 class="text-2xl font-bold text-center" data-en="Project 6: Recipe Book using Static Lists" data-es="Proyecto 6: Recetario utilizando listas estaticas">Proyecto 6: Recetario utilizando listas estaticas.</h3>
+    <p class="mt-2" data-en="Complete project of a recipe book, focused on OOP, with lists as attributes of my objects." data-es="Proyecto completo de un recetario, enfocado en POO, con listas como atributos de mis objetos.">Proyecto completo de un recetario, enfocado en POO, con listas como atributos de mis objetos.</p>
+    </pre>
+    <p></p>
+    <a href="../content/dataStruct/ProyectoEDD.rar" class="bg-myBlue text-myWhite px-4 py-1 rounded-md mt-2 align-bottom" data-en="Download Code" data-es="Descargar Código">Descargar Código</a>  
+  </div>
+</div>
+
+
+      <!-- Bases de Datos -->
+      <div class="bg-myPurple p-5 rounded-lg mb-10 mx-4">
+        <h2 class="text-3xl font-semibold text-center" data-en="5. Databases" data-es="5. Bases de Datos">5. Bases de Datos</h2>
+        <div class="mt-4 text-center">
+          <h3 class="text-2xl font-bold" data-en="Project 1: Data Base" data-es="Proyecto 1: Base de datos">Proyecto 1: Base de datos</h3>
+          <div class="flex justify-center mt-4">
+            <img src="../content/database.png" alt="Imagen del Proyecto" class="w-1/2 h-auto mt-2 rounded-lg border-4 border-myBlack shadow-lg transform transition duration-500 hover:scale-110 hover:shadow-2xl mx-auto">
+          </div>
+          <p class="mt-8 text-center" data-en="Logical model used to create the database for a music application" data-es="Modelo Logico utilizado para hacer la base de datos de una aplicacion de musica">Modelo Logico utilizado para hacer la base de datos de una aplicacion de musica</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-myBlack text-myWhite py-3 mt-24">
+      <div class="container mx-auto text-center">
+        <p class="text-lg font-semibold" data-en="Contact Information" data-es="Información de Contacto">Contact Information</p>
+        <p>Email: <a href="contact.html" class="text-myBlue hover:underline">daniel.leon9282@alumnos.udg.mx</a></p>
+        <p data-en="Phone: +52 55 29432686" data-es="Teléfono: +52 55 29432686">Teléfono: +52 55 29432686</p>
+        <p data-en="Address: 1234 Street Name, City, Country" data-es="Dirección: 1234 Nombre de la Calle, Ciudad, País">Dirección: 1234 Nombre de la Calle, Ciudad, País</p>
+        <div class="mt-4">
+          <a href="https://www.linkedin.com/in/daniel-leon-knight" class="text-myBlue hover:underline">LinkedIn</a>
+          <span class="mx-2">|</span>
+          <a href="https://github.com/Dannnnn-afk" class="text-myBlue hover:underline">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

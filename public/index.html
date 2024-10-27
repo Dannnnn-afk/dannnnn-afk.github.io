@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../private/javaScript/index.js" async></script>
+  </head>
+  <body class="bg-myPurple">
+    <div class="text-center py-1 bg-myBlack text-myWhite text-2xl font-bold">
+      <!-- Language Switcher -->
+      <div class="text-left mt-2.5 ml-10">
+        <button id="btn-lang" class="bg-myRed text-myWhite px-4 py-1 rounded-md">Change to English</button>
+      </div>
+    </div>
+    <nav class="block w-10/12 max-w-screen-lg px-4 py-2 mx-auto bg-myGrey shadow-md rounded-md lg:px-8 lg:py-3 mt-10">
+      <div class="container flex flex-wrap items-center justify-between mx-auto">
+        <a href="index.html" class="mr-4 block cursor-pointer py-1.5 text-base text-myWhite font-extrabold" data-en="Portfolio" data-es="Portafolio">
+          Portfolio
+        </a>
+        <div class="tham tham-e-squeeze tham-w-6">
+          <div class="tham-box">
+            <div class="tham-inner bg-myRed"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden" id="mobile-menu">
+        <ul class="flex flex-col gap-1 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-col lg:items-start lg:gap-2">
+          <li class="flex items-center p-1 text-sm gap-x-2 text-myWhite">
+            <a href="proyects.html" class="flex items-center" data-en="Projects" data-es="Proyectos">
+              Proyectos
+            </a>
+          </li>
+          <li class="flex items-center p-1 text-sm gap-x-2 text-myWhite">
+            <a href="contact.html" class="flex items-center" data-en="Contact" data-es="Contacto">
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- Main content with image section -->
+    <div class="container mx-auto mt-10 flex">
+      <!-- Main content area -->
+      <div class="w-8/12 p-4">
+        <h1 class="text-3xl font-bold mb-4" data-en="Computer Engineering Student" data-es="Estudiante de ingeniería en computación">Estudiante de ingeniería en computación</h1>
+        <p>
+          <a href="https://www.cucei.udg.mx" target="_blank" class="text-3xl font-bold mb-4 text-myBlue hover:underline">CUCEI</a>
+        </p>
+        <h2 class="text-2xl font-semibold mb-4" data-en="Developer and Game Designer" data-es="Desarrollador y Diseñador de Videojuegos">Desarrollador y Diseñador de Videojuegos</h2>
+        <p data-en="Passion in many related areas in my career, I have currently worked on web development projects and video game creation as the current programming director of a game that I am in full development (Add link in a section called Paint Raiders), I have experience in unreal engine 5, programming languages ​​such as C++, C, Python, JavaScript, among others, I also have knowledge in creating databases in SQL." data-es="Pasion en muchos ambitos relacionados en mi carrera, actualmente he trabajado en proyectos de desarrollo web y creacion de videjuegos como actual director de programacion de un juego que estoy en pleno desarrollo(Agregar link en un apartado que se llame Paint Raiders), cuento con experencia en unreal engine 5, lenguajes de programacion como C++, C, Python, JavaScript, entre otros, tambien tengo conocimientos en la creacion de bases de datos en SQL.">Pasion en muchos ambitos relacionados en mi carrera en este momento estoy por terminar el cuarto semestre, actualmente he trabajado en proyectos de desarrollo web y creacion de videjuegos como actual director de programacion de un juego que estoy en pleno desarrollo, cuento con experencia en unreal engine 5, lenguajes de programacion como C++, C, Python, JavaScript, entre otros, tambien tengo conocimientos en la creacion de bases de datos en SQL.</p>
+        <button id="btn-certificaciones" class="bg-myRed text-myWhite px-4 py-2 rounded-md mt-4" data-en="Certifications" data-es="Certificaciones">Certificaciones</button>
+        <ul id="pdf-list" class="hidden mt-4 list-none">
+          <li class="mb-2">
+            <a href="../content/DLK_UnrealEngine.pdf" target="_blank" class="block px-4 py-2 text-myWhite bg-myGrey rounded-xl hover:bg-myBlue hover:text-white hover:underline transition-colors duration-300 text-center" data-en="Unreal engine 5" data-es="Unreal engine 5">Unreal engine 5</a>
+          </li>
+          <li class="mb-2">
+            <a href="//" target="_blank" class="block px-4 py-2 text-myWhite bg-myGrey rounded-lg hover:bg-myBlue hover:text-white hover:underline transition-colors duration-300 text-center" data-en="Data Bases Oracle" data-es="Bases de Datos Oracle">Data Bases Oracle</a>
+          </li>
+          <li class="mb-2">
+            <a href="//" target="_blank" class="block px-4 py-2 text-myWhite bg-myGrey rounded-lg hover:bg-myBlue hover:text-white hover:underline transition-colors duration-300 text-center" data-en="English" data-es="Inglés">English</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Image section -->
+      <div class="w-4/12 p-3 bg-gradient-to-r from-myPurple to-myGrey rounded-lg shadow-lg flex flex-col items-center h-2/4">
+        <div class="relative group w-full flex flex-col items-center">
+          <img src="../content/dani.jpg" alt="Imagen de mi persona, un simple joven estudiante con muchas ambiciones" class="w-3/4 h-auto rounded-lg shadow-2xl border-4 border-gradient-to-r from-myBlue to-myRed transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:shadow-myBlack">
+          <div class="absolute inset-0 rounded-lg border-4 border-dashed border-transparent group-hover:border-myBlue animate-border"></div>
+        </div>
+        <p class="text-center text-myBlack text-xl font-extrabold mt-2 bg-myWhite bg-opacity-75 p-2 rounded-lg shadow-md">Daniel Leon Knight</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-myBlack text-myWhite py-3 mt-24">
+      <div class="container mx-auto text-center">
+        <p class="text-lg font-semibold" data-en="Contact Information" data-es="Información de Contacto">Contact Information</p>
+        <p>Email: <a href="contact.html" class="text-myBlue hover:underline">daniel.leon9282@alumnos.udg.mx</a></p>
+        <p data-en="Phone: +52 55 29432686" data-es="Teléfono: +52 55 29432686">Telefono: +52 55 29432686</p>
+        <p data-en="Address: 1234 Street Name, City, Country" data-es="Dirección: 1234 Nombre de la Calle, Ciudad, País">Dirreccion:</p>
+        <div class="mt-4">
+          <a href="../public/404.html" class="text-myBlue hover:underline">LinkedIn</a>
+          <span class="mx-2">|</span>
+          <a href="https://github.com/Dannnnn-afk" target="_blank" class="text-myBlue hover:underline">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
