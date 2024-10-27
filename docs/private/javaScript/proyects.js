@@ -1,48 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const commentForm = document.getElementById('commentForm');
-  if (commentForm) {
-    commentForm.addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const comment = document.getElementById('comment').value;
-
-      const comments = JSON.parse(localStorage.getItem('comments')) || [];
-      comments.push({ name, email, comment });
-      localStorage.setItem('comments', JSON.stringify(comments));
-
-      alert('Comment submitted successfully!');
-      displayComments();
-    });
-  } else {
-    console.error("Elemento 'commentForm' no encontrado.");
-  }
-
-  function displayComments() {
-    const commentsList = document.getElementById('commentsList');
-    const comments = JSON.parse(localStorage.getItem('comments')) || [];
-
-    if (commentsList) {
-      commentsList.innerHTML = '';
-      comments.forEach((comment, index) => {
-        const commentDiv = document.createElement('div');
-        commentDiv.classList.add('mb-4', 'p-4', 'bg-myGrey', 'rounded-md');
-        commentDiv.innerHTML = `
-          <p><strong data-en="Name:" data-es="Nombre:">Name:</strong> ${comment.name}</p>
-          <p><strong data-en="Email:" data-es="Correo Electrónico:">Email:</strong> ${comment.email}</p>
-          <p><strong data-en="Comment:" data-es="Comentario:">Comment:</strong> ${comment.comment}</p>
-        `;
-        commentsList.appendChild(commentDiv);
-      });
-    } else {
-      console.error("Elemento 'commentsList' no encontrado.");
-    }
-  }
-
-  // Initial display of comments
-  displayComments();
-
   const tham = document.querySelector(".tham");
   const mobileMenu = document.getElementById("mobile-menu");
 
@@ -88,4 +44,20 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     console.error("Elemento 'btn-lang' no encontrado.");
   }
+
+  function toggleCode(id) {
+    const codeElement = document.getElementById(id);
+    if (codeElement) {
+      if (codeElement.classList.contains('hidden')) {
+        codeElement.classList.remove('hidden');
+      } else {
+        codeElement.classList.add('hidden');
+      }
+    } else {
+      console.error(`Elemento con id '${id}' no encontrado.`);
+    }
+  }
+
+  // Expose toggleCode function to global scope
+  window.toggleCode = toggleCode;
 });
